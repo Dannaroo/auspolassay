@@ -134,6 +134,18 @@ header {
 	color: red;
 }
 
+.nat {
+	color: green;
+}
+
+.nxt {
+	color: orange;
+}
+
+.ind {
+	color: grey;
+}
+
 /* ---- Float clearfix ---- */
 
 .clearfix::after {
