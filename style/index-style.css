@@ -1,0 +1,245 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Verdana', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: 1em;
+	margin-bottom: 1.8em;
+	letter-spacing: .08em;
+}
+
+/* h1 a {
+	color: gold;
+} */
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* Navigation */
+header {
+  background: linear-gradient(#fff, transparent 50%),
+              linear-gradient(to right, #fff, transparent 50%),
+              #00008B url("../../auspol/img/australian-flag-large.jpg") no-repeat left;
+	/* padding-top: 1.5em;
+	padding-bottom: 1.5em; */
+	margin-bottom: 30px;
+  background-size: cover;
+
+	border-bottom: 2px black solid;
+}
+
+.nav-bar {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.title a,
+.nav-bar a {
+	text-align: center;
+	display: block;
+	padding: 5px;
+	background-color: black;
+	margin-top: 6px;
+  margin-bottom: 6px;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+.nav-bar a {
+	font-size: .95em;
+	text-transform: uppercase;
+	color: white;
+
+}
+.nav-bar a:hover {
+	color: gold;
+	border: 1px gold solid;
+	padding: 4px;
+
+}
+
+	.title a {
+		color: gold;
+	}
+
+  .title a:hover {
+		color: lawngreen;
+		border: solid lawngreen 2px;
+		padding: 3px;
+}
+
+
+
+/* Layout Containers */
+
+.col {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: .5em;
+	/* border: solid black 2px; */
+	border-radius: 10px;
+}
+.main-footer {
+	background: #d9e4ea;
+	padding: .5em .5em;
+	margin-top: 1px;
+	font-size: .6em;
+	margin-top: 5px;
+	text-align: center;
+}
+
+	.parl-img {
+		box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+	}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+
+@media (min-width: 650px) {
+
+
+
+	/* Navigation */
+
+	.nav-bar li,
+	.title {
+		display: inline-block;
+	}
+
+	.title {
+		margin-left: 5px;
+		margin-right: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+
+
+
+	/* Main Content */
+
+	.col {
+		display: inline-block;
+		width: 45%;
+		vertical-align: top;
+		/* margin: 20px 10px; */
+	}
+
+	.main-content {
+		margin: 0 auto;
+		width: 95%;
+		text-align: center;
+		max-width: 1180px;
+		border-left: 1px darkgrey solid;
+		border-right: 1px darkgrey solid;
+	}
+
+	figure {
+		text-decoration: none;
+		margin: 0 auto;
+	}
+
+
+}
+
+@media (min-width: 1281px) {
+
+	nav {
+		float: right;
+		padding-top: 15px;
+	}
+
+	.nav-bar li {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.main-content {
+		width: 80%;
+	}
+
+	/* Keep the header at the top of the viewport */
+	.main-header {
+		position: fixed;
+		top: 0;
+		z-index: 1;
+		width: 100%;
+		height: 80px;
+	}
+
+	/*Keep the body visible underneath the fixed header */
+
+	body {
+		margin-top: 100px;
+	}
+
+	/* .col {
+		width: 30%
+
+	}
+
+	.intro {
+		float: left;
+	}
+
+	.redistributions {
+		float: right;
+	}
+
+	.the-date {
+		width: 70%;
+	} */
+
+
+}
